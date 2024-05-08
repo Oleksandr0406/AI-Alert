@@ -1,0 +1,10 @@
+version: '3'
+services:
+  backend:
+    build: 
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/server
+    ports:
+      - 8000:8000
+    entrypoint: ["/entrypoint.sh"]

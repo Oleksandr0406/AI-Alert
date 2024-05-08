@@ -1,0 +1,18 @@
+{
+    debug on
+    auto_https off
+}
+
+:80 {
+    handle_path /static/* {
+        root * /var/www/static
+        file_server browse
+    }
+    handle_path /server/* {
+        reverse_proxy http://server:8000
+    }
+
+    handle {
+        reverse_proxy http://client:3000
+    }
+}

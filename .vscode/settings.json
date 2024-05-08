@@ -1,0 +1,66 @@
+{
+    "editor.formatOnSave": true,
+    // "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.renderFinalNewline": "on",
+    "files.insertFinalNewline": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
+    },
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./server",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.analysis.indexing": true,
+    "python.analysis.completeFunctionParens": false,
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/src/server"
+    ],
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/src/server"
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.packageIndexDepths": [
+        {
+            "name": "django",
+            "depth": 10,
+            "includeAllSymbols": true
+        },
+        {
+            "name": "wagtail",
+            "depth": 10,
+            "includeAllSymbols": true
+        }
+    ],
+    "mypy.enabled": true,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "mypy.dmypyExecutable": "${workspaceFolder}/.venv/bin/dmypy",
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "python.analysis.autoFormatStrings": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Epic Visits Dev",
+            "group": "Epic Visits",
+            "database": "epic",
+            "username": "epic",
+            "password": "secret"
+        }
+    ]
+}

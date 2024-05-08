@@ -1,0 +1,43 @@
+version: '3'
+
+name: alerting
+
+services:
+  client:
+    build:
+      context: ../../src/client
+    restart: unless-stopped
+    environment:
+      - NEXT_PUBLIC_SERVER_BASE_URL=/server
+      - NEXT_PUBLIC_STRIPE_KEY=pk_test_51P0JCuLk5QNf8hoZZSafBTc2OHM5uewY4L9w6c1cQ4jJyoF4CL9BzR8KPBXtdsWpZ1qF0cwgzw6yde4viKzE6CGR00VSaRxVnY
+
+  server:
+    build:
+      context: ../../src/server
+    restart: unless-stopped
+    volumes:
+      - database:/database
+      - static:/var/www/static
+    environment:
+      - DATABASE_URL=sqlite:///db.sqlite3
+      - FORCE_SCRIPT_NAME=/server
+      - STATIC_ROOT=/var/www/static
+
+  caddy:
+    build:
+      context: ../../src/caddy
+    restart: unless-stopped
+    ports:
+      - 8000:80
+      # - 443:443
+    volumes:
+      # - ../../src/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+      - static:/var/www/static
+
+volumes:
+  database:
+  caddy_data:
+  caddy_config:
+  static:

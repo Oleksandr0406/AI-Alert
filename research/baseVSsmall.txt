@@ -1,0 +1,36 @@
+sample: processed-audio.mp3
+whisper base version:   quicker translation time
+
+"It's 38, I'm very glad to see you. The time is 1, assuming command. The time is 1, assuming command. The time is 1, assuming command. 
+Yeah, fire appears to be hours. It's a fast fast. Received. Regents 3 officer for Regents 3 driver. I'm much more worried about you 
+than you need. Howard, you're going to pop the back open here. A little bit more out of me, maybe not 100 gallons. You're going to 
+have to flash it right now. Hold off right now. Flip the seat. Flip. Ahead of the 3 driver, we're just going to hit it real quick. I 
+know we should be going for that. But day in 1 for mention 3, we're going to be picking up. Received whenever you're comfortable. 
+You can let 10 or 11 in squad 1 go if you don't need them. Yes, squad 1's up here with us. I'll have him help us pick this line up. 
+I'll let 11 know right now. We got a full tank. Received, thank you. Time for a tundary 11. This is your turn. Message 
+received in our 11. District 1, ambulance 1 and squad 2, ambulance call. Check for well-being. 9, south, downtown Navinot. Your west, 
+Campbell Street. Math page, AAD team. Gives the question. Psych you go. Good day, I went for mention 3, we're all picked up. We'll 
+be returning. Received, we'll be leaving mind you. ambulance 1 and squad 2 responding to 9, south, downtown Navinot. Unit 2, David. 
+PVE is on the scene. Requesting you to stay upon arrival. They have a suicidal subject. This is a private intoxication in the unit. 
+Across of Campbell Street, 9, south, downtown Navinot. The ambulance is on the scene. The ambulance is on the scene. The ambulance 
+is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on 
+the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. 
+The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance 
+is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. 
+The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene. The ambulance is on the scene."
+
+
+whisper small version:  longer translation time, but different message
+
+"It's a 38, I'm very nervous. I don't know if we're behind you. What are you guys doing? Tower 1's on scene. Natural Battalion 1 on scene 
+at command. Battalion 1 assuming command. Battalion 1, Engine 3. Go ahead. Yeah, fire appears to be ours. We're just going to hit some hot 
+spots. Received. Engine 3 officer from Engine 3 driver plan. How much more water do you think you need? Howard, you're going to pop the 
+back open here and put a little bit more out of it. Maybe another hundred gallons. You're good? I'm flashing right now. Do you want me to 
+go ahead and fill up? Hold on for right now. Let's lift the scene. Left. Engine 3 driver, we're just going to hit it here real quick. And 
+then we should be going one more time. Battalion 1 from Engine 3, we're going to be picking up. Received. Whenever you're comfortable you 
+can let Tender 11 and Squad 1 go if you don't need them. Yeah, Squad 1's up here with us. I'll have him open to pick the line up. I'll let 
+11 know right now if we've got a full tank. Received. Thank you. Time for Tender 11 returning. Message received, Tender 11. District 1, 
+Ambulance 1 and Squad 2, Ambulance call. Check for well-being. 9 South Denton Avenue, near West Campbell Street. Map page, AAG team. City's 
+requesting a psyche now. Good to know you went from Engine 3. We're all picked up. We'll be returning. Received. We'll all be leaving behind 
+you. Ambulance 1 and Squad 2 responding to 9 South Denton Avenue, Unit 2, D. David. PV is on the scene requesting you to stage upon arrival. 
+They have suicidal subjects, highly intoxicated in the unit. Across of Campbell Street, 9 South Denton Avenue."

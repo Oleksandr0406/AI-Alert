@@ -1,0 +1,6 @@
+
+
+POST https://m.broadcastify.com/login/
+Content-Type: application/x-www-form-urlencoded
+
+username=alertai&password=Var%2B(n42421799)&action=auth&redirect=https://www.broadcastify.com/

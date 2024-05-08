@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "ai-alerting"
+version = "0.1.0"
+description = ""
+authors = ["Bogdan I. Bursuc <bogdanbursuc86@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "research" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pudb = "^2023.1"
+requests = "^2.31.0"
+openai = "^1.7.2"
+pydub = "^0.25.1"
+openai-whisper = "^20231117"
+noisereduce = "^3.0.0"
+librosa = "^0.10.1"
+soundfile = "^0.12.1"
+django = "^5.0.3"
+djangorestframework = "^3.14.0"
+django-filter = "^23.5"
+markdown = "^3.5.2"
+drf-spectacular = "^0.27.1"
+django-cors-headers = "^4.3.1"
+stripe = "^8.9.0"
+django-environ = "^0.11.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+include = [
+    "src/server/**/*.py"
+]
+exclude = [
+    ".venv",
+    "migrations",
+    ".mypy_cache"
+]
+line-length = 100
+show-fixes = true
+select = [
+    "B",
+    "B9",
+    "C",
+    "COM",
+    "C90",
+    "DJ",
+    "E",
+    "ERA",
+    "F",
+    "I",
+    "PLC",
+    "PLE",
+    "UP",
+    "W",
+]
+ignore = [
+    "B008",
+    "DJ001",
+    # "F401",
+    "F403",
+    "ERA001",
+]
+
+[tool.ruff.pycodestyle]
+max-doc-length = 100
+
+[tool.ruff.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 10.
+max-complexity = 10
